@@ -9,7 +9,7 @@ int main() {
     if (stop == 1) {
       cout << "\nProgram terminates, Bye \n";
       break;
-    } else {
+    } else if (stop == 0) {
       int num;
       cout << "\n Welcome to C++ Assignment 1";
       cout << "\nThis is a menu driven assignment please select any program of "
@@ -27,7 +27,7 @@ int main() {
              "is vowel or not: \n 10)Number divisible by 7 or not: \n 11)Print "
              "month name when number is entered: ";
 
-      cout << "\n Enter a number from between 1 to 11: ";
+      cout << "\n Enter a number between 1 to 11: ";
       cin >> num;
 
       switch (num) {
@@ -90,6 +90,9 @@ int main() {
       default:
         cout << "\nEnter a valid number\n";
       }
+    } else {
+      cout << "Enter a valid number and re-run the code\n";
+      
     }
   }
 
